@@ -8,12 +8,9 @@ interface BoxProps {
 }
 
 const Box: React.FC<BoxProps> = (props) => {
-  const { size, border, blur } = props
   return (
   <StyledBox 
-    size={size} 
-    border={border} 
-    blur={blur}
+   {...props}
   />
   )
 };
