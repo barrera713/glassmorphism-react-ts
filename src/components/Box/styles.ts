@@ -1,31 +1,37 @@
 import styled from 'styled-components';
 
 interface StyledBoxProps {
-    size: string,
+    size?: string,
     border?: boolean,
-    blur?: number
+    blur?: number,
 }
 
 const StyledBox = styled.div<StyledBoxProps>`
     ${(props: StyledBoxProps) => {
         const {size } = props;
-            if(size === 'small') {
+            if(size === 'sm') {
                 return ` 
+                    height: 200px;
+                    width: 200px;
+                `
+            } else if(size === 'm') {
+                return `
                     height: 300px;
                     width: 300px;
                 `
-            } else if(size === 'medium') {
+            } else if(size === 'lg') {
                 return `
                     height: 500px;
                     width: 500px;
-                `
-            } else {
-                return `
-                    height: 700px;
-                    width: 700px;
                     `
                 }
-            }
+                else {
+                    return `
+                    height: 300px;
+                    width: 300px;
+                    `
+                }
+            }  
         }
         margin: 0 auto;
         background: rgba( 255, 255, 255, 0.25 );
@@ -33,6 +39,6 @@ const StyledBox = styled.div<StyledBoxProps>`
         backdrop-filter: blur(${(props: StyledBoxProps) => `${props.blur}px`});
         -webkit-backdrop-filter: blur(${(props: StyledBoxProps) => `${props.blur}px`});
         border-radius: 15px;
-        ${(props: StyledBoxProps) => props.border === false ? `border: none` : `border: 1px solid rgba( 255, 255, 255, 0.18 );`}
+        border: ${(props: StyledBoxProps) => props.border === false ? `none;` : `1px solid rgba( 255, 255, 255, 0.18 );`}
     `
 export default StyledBox;

@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div className="dev-background">
       <h5>Glassmorphism</h5>
-      <Box size='small' blur={5} />
+      <Box />
     </div>
   )
-}
+};
 
 export default App
