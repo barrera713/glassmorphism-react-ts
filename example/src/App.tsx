@@ -5,14 +5,12 @@ import 'glassmorphism-react-ts/dist/index.css'
 
 const App = () => {
   return (
-  <div className="dev-bg">
-    <Box size="large" />
-    <a href='https://www.freepik.com/vectors/technology'
-    className="props"
-    >
-      Technology vector created by starline - www.freepik.com
-      </a>
-  </div>
+    <>
+    <div className="dev-background">
+      <h5>Glassmorphism</h5>
+      <Box size="large" />
+    </div>
+    </>
   )
 }
 

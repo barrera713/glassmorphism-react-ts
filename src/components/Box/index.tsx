@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { BoxStyles } from './styles';
 
 interface BoxProps {
   size: string
@@ -6,10 +7,9 @@ interface BoxProps {
 
 const Box: React.FC<BoxProps> = ({size}) => {
   return (
-  <div 
+  <BoxStyles 
   className={size}>
-    <p>HELLO</p>
-  </div>
+  </BoxStyles>
   )
 };
 
