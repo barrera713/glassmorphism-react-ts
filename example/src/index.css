@@ -12,3 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dev-bg {
+  background-image: url('./bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.props {
+  position: absolute;
+  top: 800px;
+  background-color: snow;
+}

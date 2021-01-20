@@ -1,10 +1,19 @@
 import React from 'react'
 
-import { ExampleComponent } from 'glassmorphism-react-ts'
+import { Box } from 'glassmorphism-react-ts'
 import 'glassmorphism-react-ts/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+  <div className="dev-bg">
+    <Box size="large" />
+    <a href='https://www.freepik.com/vectors/technology'
+    className="props"
+    >
+      Technology vector created by starline - www.freepik.com
+      </a>
+  </div>
+  )
 }
 
 export default App
