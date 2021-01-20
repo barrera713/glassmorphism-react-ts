@@ -1,15 +1,14 @@
 import * as React from 'react'
-import { BoxStyles } from './styles';
+import StyledBox from './styles';
 
 interface BoxProps {
   size: string
 }
 
-const Box: React.FC<BoxProps> = ({size}) => {
+const Box: React.FC<BoxProps> = (props) => {
+  const { size } = props
   return (
-  <BoxStyles 
-  className={size}>
-  </BoxStyles>
+  <StyledBox size={size} />
   )
 };
 

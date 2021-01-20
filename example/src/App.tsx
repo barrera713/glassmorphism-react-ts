@@ -5,12 +5,10 @@ import 'glassmorphism-react-ts/dist/index.css'
 
 const App = () => {
   return (
-    <>
     <div className="dev-background">
       <h5>Glassmorphism</h5>
-      <Box size="large" />
+      <Box size='small'/>
     </div>
-    </>
   )
 }
 
