@@ -13,7 +13,7 @@ npm install --save glassmorphism-react-ts
 ## Usage
 
 ```tsx
-import React, { Box } from 'react'
+import React from 'react'
 
 import Box from 'glassmorphism-react-ts'
 import 'glassmorphism-react-ts/dist/index.css'
