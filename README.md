@@ -13,14 +13,14 @@ npm install --save glassmorphism-react-ts
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { Box } from 'react'
 
-import MyComponent from 'glassmorphism-react-ts'
+import Box from 'glassmorphism-react-ts'
 import 'glassmorphism-react-ts/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Box />
   }
 }
 ```
