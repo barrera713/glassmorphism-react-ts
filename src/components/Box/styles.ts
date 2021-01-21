@@ -16,8 +16,8 @@ const StyledBox = styled.div<StyledBoxProps>`
                 `
             } else if(size === 'm') {
                 return `
-                    height: 300px;
-                    width: 300px;
+                    height: 400px;
+                    width: 400px;
                 `
             } else if(size === 'lg') {
                 return `
