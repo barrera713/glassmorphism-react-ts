@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { selectSize } from '../../utils/tools';
+import { selectBoxSize } from '../../utils/tools';
 
 interface StyledBoxProps {
     size?: string,
@@ -8,7 +8,7 @@ interface StyledBoxProps {
 }
 
 const StyledBox = styled.div<StyledBoxProps>`
-    ${(props: StyledBoxProps) => ( selectSize(props.size!)) }
+    ${(props: StyledBoxProps) => ( selectBoxSize(props.size!)) }
         margin: 0 auto;
         background: rgba( 255, 255, 255, 0.25 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
