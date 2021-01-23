@@ -7,8 +7,7 @@ const App = () => {
   return (
     <div className="dev-background">
       <h5>Glassmorphism</h5>
-      <Box />
-      <p>Buttons</p>
+      <Box size='lg' blur={5} />
       <div style={{padding: '10px 0'}}>
       <Button size='sm'>Small</Button>
       </div>
