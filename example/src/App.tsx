@@ -1,21 +1,23 @@
 import React from 'react'
 
-import { Box, Button } from 'glassmorphism-react-ts'
+import { Box, Button, Divider, List } from 'glassmorphism-react-ts'
 import 'glassmorphism-react-ts/dist/index.css'
 
 const App = () => {
   return (
     <div className="dev-background">
       <h5>Glassmorphism</h5>
-      <Box size='lg' blur={5} />
-      <div style={{padding: '10px 0'}}>
-      <Button size='sm'>Small</Button>
-      </div>
-      <div style={{padding: '10px 0'}}>
-      <Button>Normal</Button>
-      </div>
-      <div style={{padding: '10px 0'}}>
-      <Button size='lg'>Large</Button>
+      <div className='component-ctn'>
+        <Box size='lg' blur={5} />
+        <Divider />
+        <Button size='sm'>Small</Button>
+        <Divider />
+        <Button>Normal</Button>
+        <Divider />
+        <Button size='lg'>Large</Button>
+        <List size='lg'>
+         
+        </List>
       </div>
     </div>
   )

@@ -26,9 +26,8 @@ code {
   background: rgb(21,36,54);
   background: radial-gradient(circle, rgba(21,36,54,1) 1%, rgba(7,237,128,1) 100%);
   text-align: center;
-  height: 150vh;
+  height: 100vh;
 }
-
 
 .dev-background h5 {
   position: relative;
@@ -37,6 +36,10 @@ code {
   color: #ffffff;
 }
 
+.component-ctn {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 600px) {
   .dev-background {

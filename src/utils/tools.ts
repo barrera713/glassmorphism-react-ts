@@ -53,3 +53,26 @@ export const selectButtonSize = (size: string) => {
     return selected;
 };
 
+
+
+export const selectListSize = (size: string) => {
+    let selected: string;
+    if(size === 'sm') {
+        selected = ` 
+            height: 20px;
+            width: 100%;
+        `
+    } else if(size === 'lg') {
+        selected = `
+            height: 40px;
+            width: 100%;
+        `
+    } else {
+        selected = `
+        height: 30px;
+        width: 100%;
+        `
+    }
+    return selected;
+};
+
