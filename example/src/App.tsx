@@ -16,7 +16,7 @@ const App = () => {
       <Button>Normal</Button>
       </div>
       <div style={{padding: '10px 0'}}>
-      <Button size='lg'>Normal</Button>
+      <Button size='lg'>Large</Button>
       </div>
     </div>
   )
