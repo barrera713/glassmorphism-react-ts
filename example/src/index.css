@@ -8,8 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 
-  /* MIGHT HAVE TO REMOVE BEFORE PUBLISHING */
-  height: 100vh;
 }
 
 * {
@@ -19,13 +17,15 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 .dev-background {
   background: rgb(21,36,54);
   background: radial-gradient(circle, rgba(21,36,54,1) 1%, rgba(7,237,128,1) 100%);
   text-align: center;
+  
+  /* MIGHT HAVE TO REMOVE BEFORE PUBLISHING */
   height: 100vh;
 }
 
