@@ -36,10 +36,10 @@ code {
   color: #ffffff;
 }
 
-/* .component-ctn {
-  max-width: 500px;
+.component-ctn {
+  max-width: 700px;
   margin: 0 auto;
-} */
+}
 
 @media only screen and (max-width: 600px) {
   .dev-background {

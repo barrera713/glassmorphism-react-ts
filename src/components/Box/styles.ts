@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { selectBoxSize } from '../../utils/tools';
+import { selectBoxSize } from '../../utils/BoxTools';
 
 interface StyledBoxProps {
     size?: string,

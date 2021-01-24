@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { selectButtonSize } from '../../utils/tools';
+import { selectButtonSize } from '../../utils/ButtonTools';
 interface StyledButtonProps {
     size?: string,
     blur?: number,

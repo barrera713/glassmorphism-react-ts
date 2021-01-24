@@ -1,30 +1,30 @@
 import styled from 'styled-components';
-import { selectListSize } from '../../utils/tools';
+import { selectListHeight, selectListText } from '../../utils/ListTools';
 
 interface StyledListProps {
-    size?: 'sm' | 'lg'
+    height?: 'sm' | 'lg';
+    textAlign?: 'left' | 'center' | 'right';
 }
+
 export const StyledList = styled.div<StyledListProps>`
-    text-align: left;
     font-weight: bold;
-    justify-content: center;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     width: 100%;
+    ${(props: StyledListProps) => ( selectListText(props.textAlign!))};
+
 
     p {
         display: table-cell;
         vertical-align: middle;
         height: inherit;
-        padding-left: 10px;
     }
 `
 
 
 export const StyledListItem = styled.div<StyledListProps>`
-    ${(props: StyledListProps) => ( selectListSize(props.size!))};
-    justify-content: center;
-    border-bottom: 2px solid rgba( 255, 255, 255, 0.2 );
+    ${(props: StyledListProps) => ( selectListHeight(props.height!))};
+    border-bottom: 1.5px solid rgba( 255, 255, 255, 0.2 );
     color: #ffffff;
 `
 

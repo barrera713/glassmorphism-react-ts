@@ -18,7 +18,7 @@ const App = () => {
         <Button>Normal</Button>
         <Divider />
         <Button size='lg'>Large</Button> */}
-        <List items={mockData} size='lg'></List>
+        <List items={mockData} height='lg' textAlign='left' />
       </div>
     </div>
   )
