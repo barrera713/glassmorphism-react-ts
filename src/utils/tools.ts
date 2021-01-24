@@ -60,17 +60,17 @@ export const selectListSize = (size: string) => {
     if(size === 'sm') {
         selected = ` 
             height: 20px;
-            width: 100%;
+            font-size: 12px;
         `
     } else if(size === 'lg') {
         selected = `
             height: 40px;
-            width: 100%;
+            font-size: 16px;
         `
     } else {
         selected = `
         height: 30px;
-        width: 100%;
+        font-size: 14px;
         `
     }
     return selected;
