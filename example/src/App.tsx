@@ -19,7 +19,7 @@ const App = () => {
         <Divider />
         <Button size='lg'>Large</Button>
         <Divider />
-        <List items={mockData} />
+        <List items={mockData} height='sm'/>
       </div>
     </div>
   )

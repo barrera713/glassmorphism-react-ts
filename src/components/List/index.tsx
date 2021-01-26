@@ -6,7 +6,7 @@ import Item from './Item';
 interface ListProps {
   items?: any[];
   height?: 'sm' | 'lg';
-  textAlign?: 'left' | 'center' | 'right'
+  textAlign?: 'left' | 'center' | 'right';
 }
 
 
