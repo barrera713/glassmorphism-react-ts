@@ -10,6 +10,20 @@
 npm install --save glassmorphism-react-ts
 ```
 
+This package is written in Typescript with complete definitions.
+
+Box component has the following (optional) props:
+
+size: 'sm' | 'm' | 'lg' 
+default: 'm'
+
+border: boolean;
+default: true
+
+blur: integer
+default: 0
+
+
 ## Usage
 
 ```tsx
@@ -20,7 +34,9 @@ import 'glassmorphism-react-ts/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <Box />
+    return <Box size='lg' blur={7} border={false}>
+      <h3>Hell from inside glass box!</h3>
+    </Box>
   }
 }
 ```

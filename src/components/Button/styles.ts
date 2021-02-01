@@ -15,6 +15,7 @@ const StyledButton = styled.div<StyledButtonProps>`
     -webkit-backdrop-filter: blur(${(props: StyledButtonProps) => `${props.blur}px`});
     border-radius: 7px;
     border: ${(props: StyledButtonProps) => props.border === false ? `none;` : `1px solid rgba( 255, 255, 255, 0.18 );`}
+    outline: none;
 
     font-weight: bold;
     font-size: 0.9375em;
