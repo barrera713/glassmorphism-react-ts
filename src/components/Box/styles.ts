@@ -9,8 +9,8 @@ interface StyledBoxProps {
 
 const StyledBox = styled.div<StyledBoxProps>`
     ${(props: StyledBoxProps) => ( selectBoxSize(props.size!)) }
-        margin: 0 auto;
-        background: rgba( 255, 255, 255, 0.25 );
+        margin: auto;
+        background: rgba( 255, 255, 255, 0.25);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur(${(props: StyledBoxProps) => `${props.blur}px`});
         -webkit-backdrop-filter: blur(${(props: StyledBoxProps) => `${props.blur}px`});

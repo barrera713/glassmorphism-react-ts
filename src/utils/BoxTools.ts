@@ -2,8 +2,8 @@ export const selectBoxSize = (size: string) => {
     let selected: string;
     if(size === 'sm') {
         selected = ` 
-            height: 200px;
-            width: 200px;
+            height: 250px;
+            width: 250px;
         `
     } else if(size === 'm') {
         selected = `

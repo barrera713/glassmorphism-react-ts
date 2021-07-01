@@ -11,7 +11,7 @@ const App = () => {
     <div className="dev-background">
       <h5>Glassmorphism</h5>
       <div className='component-ctn'>
-        <Box size='m' blur={2}>
+        <Box size='sm' blur={3}>
           <h3 style={{color: "orange"}}>Hello from glass box!</h3>
         </Box>
         {/* <Divider />
@@ -27,4 +27,4 @@ const App = () => {
   )
 };
 
-export default App
+export default App;
